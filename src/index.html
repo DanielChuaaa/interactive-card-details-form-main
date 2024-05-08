@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="containerr">
+      <section>
+        <div class="leftSide">
+          <div class="mainImgWrapper">
+            <img src="../images/bg-main-desktop.png" alt="bgdesktop" class="imgMainDesktop" />
+            <img src="../images/bg-main-mobile.png" alt="bgmobile" class="imgMainMobile" />
+          </div>
+
+          <div class="imgCardWrapper">
+            <div class="plainCardParent">
+              <img src="../images/bg-card-back.png" alt="cardback" class="plainCard" />
+              <div class="textCvc">
+                <p>000</p>
+              </div>
+            </div>
+            <div class="numberCardParent">
+              <img src="../images/bg-card-front.png" alt="cardfront" class="numberCard" />
+              <div class="textInsideCard">
+                <img src="../images/card-logo.svg" alt="cardLogo" class="cardLogo" />
+                <p class="cardNumber">0000 0000 0000 0000</p>
+                <div class="flex justify-between mt-mt1 gap-gap11 767:gap-gap23">
+                  <p class="cardName">JANE APPLESEED</p>
+                  <div class="cardMY flex">
+                    <p class="cardMonth">00</p>
+                    /
+                    <p class="cardYear">00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="flex justify-center items-center pb-6">
+        <div>
+          <form action="" class="form">
+            <div class="inputWrapper">
+              <div class="flex flex-col">
+                <label class="label">CARDHOLDER NAME</label>
+                <input type="text" placeholder="e.g Jane Appleseed" id="cardNameInput" maxlength="13" required />
+                <div class="errorMsg"></div>
+              </div>
+
+              <div class="flex flex-col">
+                <label class="label">CARDNUMBER</label>
+                <input type="number" placeholder="e.g 1234 5678 9123 0000" id="cardNumberInput" oninput="limitInput(this, 16)" />
+                <p class="errorMsg"></p>
+              </div>
+
+              <div class="inputDate">
+                <div>
+                  <label class="label">EXP. DATE (MM/YY) </label>
+                  <div class="flex gap-2">
+                    <div class="flex flex-col">
+                      <input type="number" placeholder="MM" class="monthInput" />
+                      <div class="errorMsgMonth"></div>
+                    </div>
+
+                    <div class="flex flex-col">
+                      <input type="number" placeholder="YY" class="yearInput" />
+                      <div class="errorMsgYear"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="w-full">
+                  <label for="">CVC</label>
+                  <div>
+                    <input type="number" placeholder="e.g 123" class="cvcInput" />
+                    <div class="errorMsgCvc"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="submitButton">
+                <button class="button">Confirm</button>
+              </div>
+            </div>
+          </form>
+          <div class="card">
+            <div class="cardWrapper">
+              <img
+                src="../images/icon-complete.svg"
+                alt="icon-complete"
+                class="2560:w-w4 xl:w-w4 lg:w-w5 md:w-w5 sm:w-w9 450:w-w9 376:w-w12 321:w-w17 w-w17"
+              />
+              <h1 class="thankYou">THANKYOU!</h1>
+              <p class="cardText">We've added your card details</p>
+              <button class="continueButton text-fs1 mt-8 px-12">Continue</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

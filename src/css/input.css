@@ -1,0 +1,186 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+html,
+body {
+  @apply font-ff;
+}
+
+.containerr {
+  @apply grid md:grid-cols-2 grid-cols-1 md:gap-0 gap-gap13;
+}
+
+.leftSide {
+  @apply flex justify-center items-center;
+}
+
+.mainImgWrapper {
+  @apply md:w-3/6 w-full;
+}
+
+.imgMainDesktop {
+  @apply md:block hidden h-screen w-full;
+}
+
+.imgMainMobile {
+  @apply md:hidden block w-full bg-contain;
+}
+
+.imgCardWrapper {
+  @apply md:relative absolute md:-left-1/4 top-0 md:flex md:flex-col-reverse grid grid-cols-5 grid-rows-2 md:gap-y-4 md:pt-0 pt-8 md:px-0 px-4  md:w-3/5 w-full;
+}
+
+.plainCardParent {
+  @apply relative;
+}
+
+.plainCardParent {
+  grid-area: 1 / 2 / 1 / 6;
+}
+
+.plainCard {
+  @apply md:translate-x-20 w-full;
+}
+
+.textCvc {
+  @apply absolute top-0 text-white text-fs1  767:text-fs3 font-bold 3561:translate-y-transY 2560:translate-y-transY 2xl:translate-y-transY xl:translate-y-transY lg:translate-y-transY md:translate-y-transY sm:translate-y-transY767 450:translate-y-transY450 376:translate-y-transY376 321:translate-y-transY321 translate-y-transY321 2560:translate-x-transX2xl  2xl:translate-x-transX2xl  xl:translate-x-transXxl lg:translate-x-transXlg md:translate-x-transXmd  767:translate-x-transXMaxMd;
+}
+
+.numberCardParent {
+  grid-area: 2 / 1 / 2 / 5;
+  transform: translate(-0%, -44%);
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .numberCardParent {
+    transform: translate(0%, 0%);
+  }
+}
+
+.numberCard {
+  @apply w-full;
+}
+
+.textInsideCard {
+  @apply absolute top-0 p-p46  text-white;
+}
+
+.cardLogo {
+  @apply 2560:w-32 2xl:w-28 xl:w-24 lg:w-20 md:w-12 sm:w-24 450:w-20 376:w-16 321:w-12 w-12;
+}
+
+.cardNumber {
+  @apply font-bold  md:text-fs2 text-fs5 2xl:mt-mt4 xl:mt-mt4 lg:mt-mt4 md:mt-mt4 sm:mt-mt14 450:mt-mt13 376:mt-mt13 321:mt-mt12 mt-mt12;
+}
+
+.cardName {
+  @apply font-bold md:text-fs1 text-fs3;
+}
+
+.cardMY {
+  @apply font-bold md:text-fs1 text-fs3;
+}
+
+.form {
+  @apply flex flex-col px-4 md:w-w66 w-full;
+}
+
+.label {
+  @apply md:text-base text-sm;
+}
+
+input {
+  @apply border border-Lightgrayishviolet py-2 pl-4  mt-1 rounded-lg focus:outline-violet-600 placeholder:text-Lightgrayishviolet placeholder:font-bold;
+}
+
+.inputWrapper {
+  @apply flex flex-col md:gap-6 gap-4;
+}
+
+.cardNumberInput-active {
+  @apply focus:outline-red;
+}
+
+.inputDate {
+  @apply flex gap-4;
+}
+
+.monthInput-active {
+  @apply border-2 border-red;
+}
+
+.yearInput-active {
+  @apply border-2 border-red;
+}
+
+.cvcInput-active {
+  @apply border-2 border-red;
+}
+
+.errorMsg-active {
+  @apply text-red text-sm;
+}
+
+.errorMsgMonth-active {
+  @apply text-red text-sm;
+}
+
+.errorMsgYear-active {
+  @apply text-red text-sm;
+}
+
+.errorMsgCvc-active {
+  @apply text-red text-sm;
+}
+
+.submitButton {
+  @apply md:pt-0 pt-2;
+}
+
+.button {
+  @apply text-white font-bold py-3 px-4  w-full rounded-lg bg-Verydarkviolet;
+}
+
+.monthInput,
+.yearInput,
+.cvcInput {
+  @apply w-full;
+}
+
+.card {
+  @apply hidden gap-4;
+}
+
+.cardWrapper {
+  @apply flex flex-col justify-center items-center;
+}
+
+.thankYou {
+  @apply 2xl:text-fs3 xl:text-fs2 lg:text-fs2_5 md:text-fs2_5 sm:text-fs5 450:text-fs5 376:text-fs6 321:text-fs7 text-fs7 font-medium text-Verydarkviolet mt-8 tracking-wider;
+}
+
+.cardText {
+  @apply 2xl:text-fs2 xl:text-fs1_5 lg:text-fs1_5 md:text-fs1_5 sm:text-fs3 450:text-fs3 376:text-fs4 321:text-fs5 text-fs5  mt-4;
+}
+
+.continueButton {
+  @apply text-white font-bold  2xl:text-fs2 xl:text-fs1_5 lg:text-fs1_5 md:text-fs1_5  sm:text-fs2 450:text-fs2 376:text-fs3 321:text-fs4 text-fs4 mt-8 px-20  py-3   w-full rounded-lg bg-Verydarkviolet;
+}
+
+.form-active {
+  @apply hidden;
+}
+
+.card-active {
+  @apply block;
+}
